@@ -1,13 +1,13 @@
 def wellbracketed(s):
-    b = 0
+    depth = 0
     for i in s:
         if i == '(':
-            b += 1
+            depth += 1
         if i == ')':
-            b -= 1
-        if b < 0:
+            depth -= 1
+        if depth < 0:
             return False
-    return(b == 0)
+    return(depth == 0)
 
 
 print(wellbracketed(input("Input: ")))
