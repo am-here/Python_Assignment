@@ -23,14 +23,13 @@ class Time:
         st = datetime.time(int(h), int(m), int(s))
         h, m, s = end_time.split(':')
         et = datetime.time(int(h), int(m), int(s))
-        print(et-st)
         d, m, y = date.split('/')
         d = datetime.datetime(int(y), int(m), int(d))
         t1 = datetime.datetime.combine(d, st)
         t2 = datetime.datetime.combine(d, et)
         try:
             t = t2 - t1
-            if str(t)[0] == -1:
+            if str(t)[0] == '-':
                 raise Exception
             return t
         except:
