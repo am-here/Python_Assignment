@@ -1,6 +1,5 @@
 import datetime
 
-
 class Time:
     def is_valid_time(self, time):
         h, m, s = time.split(':')
