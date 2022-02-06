@@ -7,4 +7,4 @@ for i in range(n-1):
 print("Output:", end=" ")
 for i in range(n-1):
     print(W[i], end=",")
-print(W[i], end="")
+print(W[i+1], end="")
